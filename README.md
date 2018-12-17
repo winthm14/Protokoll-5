@@ -30,7 +30,8 @@ Diese Schnitstelle ermöglicht es erstmals einen Datenbus (oder RS-485 Bus) mit 
 <img src="https://raw.githubusercontent.com/winthm14/Protokoll-5/master/MÜC%3ARS485BUS.tif" alt="">   
   
 ### Ethernet (TCP/IP)/ Echtzeit(Industrial) Ethernet
-Eine weitere und bis jetzt auch leistungsstärkste Schnitstelle ist die Ethernet Schnitstell mit dem TCP/IP Protokoll. Da dies jedoch nicht Echtzeitfähig ist, gibt es von diversen Herstellern modifizierte Ethernet lösungen für die Industri. Eine lösung entwickelte B&R Automation mit Powerlink. Powerlink wird heute von der offenen Anwender- und Anbietergruppe EPSG (Ethernet Powerlink Standardization Group) als offener Standard weiterentwickelt und spezifiziert.
+Eine weitere und bis jetzt auch leistungsstärkste Schnitstelle ist die Ethernet Schnitstell mit dem TCP/IP Protokoll. Da dies jedoch nicht Echtzeitfähig ist, gibt es von diversen Herstellern modifizierte Ethernet lösungen für die Industri. Eine lösung entwickelte B&R Automation mit Powerlink. Powerlink wird heute von der offenen Anwender- und Anbietergruppe EPSG (Ethernet Powerlink Standardization Group) als offener Standard weiterentwickelt und spezifiziert.  
+<img src="https://raw.githubusercontent.com/winthm14/Protokoll-5/master/Ethernet.tif" alt="">   
 
 ### Feldbus  
 Ein Feldbus ist ein Bussystem welches in der Automatisierungstechnik Feldgeräte wie Sensoren und Aktoren mit einer Steuereinheit verbinden. Diese Methode ersetzt die bis dahin verwendete parallele Verdrahtung da diese viel teurer hinsichtlich materialverbrauch(Kabel) und finanzieller Mittel war.
