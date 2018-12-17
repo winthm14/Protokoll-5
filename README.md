@@ -112,5 +112,8 @@ Die PDU für dieses Beispiel sieht wie folgt aus:
 ```04``` -> Read Input Register  
 ```0000``` -> Inputregister 1 für die Temperatur  
 ```0001``` -> Anzahl der Gewählten Input Register  
-```BA``` -> LRC/Prüfsumme
-```<CR><LF>``` -> End-Frame
+```BA``` -> LRC/Prüfsumme  
+```<CR><LF>``` -> End-Frame  
+  
+### Berechnen der Prüfsumme LRC
+Longitudinal Redundancy Check kurz LRC ist ein Verfahren zur Erkennung von 1-Bit Fehlern bei digitaler Datenübertragung, indem über eine gewisse Anzahl von übertragenen Datenwörtern eine Prüfsumme gebildet wird. Diese Prüfsumme wird dann am Ende des Frames angehängt und mit versendet. Um die Prüfsumme zu bilden werden alle Bytes des Frames exklusive dem Start ```:``` und dem Ende ```<CR><LF>``` mit 8-Bit Additionen ohne Berücksichtigung des Überlaufs zusammenaddiert und am Ende einem Zweierkomplement unterzogen.
