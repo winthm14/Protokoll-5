@@ -49,7 +49,7 @@ Für Feldbus gib es **verschiedene Standards** für die einzelnen Automatisierun
 Das Modbus-Protokoll wurde 1979 zur Komunizierung mit SPS Geräten entwickelt. In der Automatisierungstechnik wird dieses Protokoll sehr gerne verwendet da es sich um einen offenen Standard handelt, welcher lösungen mit RS-232, RS-485 Busse und TCP/IP-Netzwerke Ermöglicht. Weiters ist Modbus ein zustandsloses Protokoll.  
   
 Der Kommunikationsablauf beruht auf einem Server/Client Prinzip. Der Client (zum Beispiel ein PC) sendet einen Request zum Server (zum Beispiel ein Aktor oder Sensor). Dieser antworter mit einer Response.  
-<img src="https://www.researchgate.net/profile/Seema_Vora2/publication/317561641/figure/fig3/AS:669285907181576@1536581603644/MODBUS-Transaction-Error-Free.png" alt="">  
+<img src="https://raw.githubusercontent.com/winthm14/Protokoll-5/master/Server%3AClient.tif" alt="">  
   
 Bei der eigentlichen Datenübertragung werden drei Varianten unterschieden:  
  * **Modbus ASCII**  
