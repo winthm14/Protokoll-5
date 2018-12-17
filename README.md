@@ -88,4 +88,25 @@ In der Folgenden Grafik ist nur die Obere Tabelle Relevant, da jeder Modbus Seri
   
 <img src="http://4.bp.blogspot.com/-ANsoUFQoxr4/Vk919TXOV6I/AAAAAAAACs4/FjL86tlqVok/s1600/MODBUS_RTU_ASCII.png" alt="">   
   
-Jeder Byte-Wert wird als Hex-Zahl-Text angegeben. Dabei sind nur die Zeichen 0 bis 9 und A bis F erlaubt.
+Jeder Byte-Wert wird als Hex-Zahl-Text angegeben. Dabei sind nur die Zeichen 0 bis 9 und A bis F erlaubt.  
+  
+### Unterrichtsbeispiel Modbus ASCII Frame  
+Die im Unterricht als Beispiel gebrachte ADU ist die Request um einen Sensor auszlesen.  
+```
+:010400000001BA<CR><LF>
+```  
+Die PDU für dieses Beispiel sieht wie folgt aus:  
+```  
+0400000001  
+```  
+**Beschreibung des Modbus ASCII Frame's**  
+  
+:|01|04|0000|0001|BA|<CR><LF>
+  
+```:``` -> Start Frame  
+```01``` -> Adresse des Geräts am Bus  
+```04``` -> Read Input Register  
+```0000``` -> Inputregister 1 für die Temperatur  
+```0001``` -> Anzahl der Gewählten Input Register  
+```BA``` -> LRC/Prüfsumme
+```<CR><LF>``` -> End-Frame
