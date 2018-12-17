@@ -18,13 +18,16 @@ Das Dollarzeichen ```$``` kennzeichnet in makefiles Variablen:
   
 ### USB (Universal Serial Bus) 
 Die USB-Schnittstelle ist sehr gut geeignet um vom PC aus mit dem Arduino zu komunizieren, da auf der Platine bereits ein UART auf USB Konverter integriert ist.  
+<img src="https://raw.githubusercontent.com/winthm14/Protokoll-5/master/USB%3AUART.tif" alt="">  
   
 ### RS-232 Schnitstelle (RS = Recommended Standard, EIA-232, EIA = Electronic Industries Alliance)  
 Diese Schnitstelle Existiert seit 1960, ist eine Punkt zu Punkt Schnitstelle und arbeitet mit Differenzspannungssignalen zwischen +15V und -15V. Ansonsten sehen die Signale sehr ähnlich aus wie bei einem UART-Signal. Dank der höheren Spannungspegeln der Signale ist es möglich über sehr große Distanzen Signale zu übertragen. Nachteile dieser Schnitstelle sind die hohe Rechenleistung welche zum Datentransfer benötigt wird und das System ist nicht Bus fähig.  
+<img src="https://raw.githubusercontent.com/winthm14/Protokoll-5/master/MÜC%3ARS232.tif" alt="">    
   
 ### RS-485 Schnitstelle  
 Trotz geringerer Spannungspegel als bei einer RS-232 Schnitstelle wirt mit der RS-485 Schnitstelle, hinsichtlich der Fehlerrate, ein besseres Ergebnis erzielt. Diese Technologie ermöglicht es Buslängen von bis zu 1200m mit einer Übertragungsgeschwindigkeit von bis zu 90kBit/s zu errichten. Ermöglicht wird dies mit zwei Leitungen A(nicht invertiertes Signal) und B(invertiertes Signal) zum Datentransfer bei lediglich -6V bis +6V.  
 Diese Schnitstelle ermöglicht es erstmals einen Datenbus (oder RS-485 Bus) mit bis zu 32 Komunikationsteilnehmer zu Errichten.  
+<img src="https://raw.githubusercontent.com/winthm14/Protokoll-5/master/MÜC%3ARS485BUS.tif" alt="">   
   
 ### Ethernet (TCP/IP)/ Echtzeit(Industrial) Ethernet
 Eine weitere und bis jetzt auch leistungsstärkste Schnitstelle ist die Ethernet Schnitstell mit dem TCP/IP Protokoll. Da dies jedoch nicht Echtzeitfähig ist, gibt es von diversen Herstellern modifizierte Ethernet lösungen für die Industri. Eine lösung entwickelte B&R Automation mit Powerlink. Powerlink wird heute von der offenen Anwender- und Anbietergruppe EPSG (Ethernet Powerlink Standardization Group) als offener Standard weiterentwickelt und spezifiziert.
